@@ -54,3 +54,6 @@ $ ./cmd.sh<br>
 
 
 ============================================================
+
+written by Yosuek Sawamura
+yosuke.sawamura@gmail.com
