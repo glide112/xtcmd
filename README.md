@@ -13,7 +13,7 @@ $ gcc -o xtcmd xtcmd.c
 
 
 ============================================================
-### Using a script to run from a file (Linux and Mac):
+### Using a script to read commands from a file (Linux and Mac):
 cmd.sh : for Linux and Mac
 
 cmd.sh
@@ -37,7 +37,7 @@ send "quit\r"
 <br>ーーーーーーーーーーーーーーーーーーーーーーーー<br>
 
 ============================================================
-### Using a script to run from a file (Windows):
+### Using a script to read commands from a file (Windows):
 
 
 ============================================================
