@@ -45,7 +45,7 @@ send "quit\r"
 Please go through the API document provided by Avaya to understand how AT commands communicate.
 
 standalone usage (Linux and Mac):<br>
-$ ./xtcmd IPADDRESS -d<br>
+$ ./xtcmd ADDRESS -d<br>
 
 file reading usage (Linux and Mac):<br>
 $ chmod 755 cmd.sh<br>
