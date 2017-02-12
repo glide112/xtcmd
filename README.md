@@ -39,6 +39,7 @@ send "quit\r"
 ============================================================
 ### Using a script to read commands from a file (Windows):
 
+You can write a vbscript file to read from a file but reccomend using expect from crygwin console.
 
 ============================================================
 ### Usage
