@@ -115,7 +115,7 @@ int main(int argc, char *argv[]) {
                 
                 //read data from open socket
                 result = read(sockfd, msg, MSG_SIZE);
-                msg[result] = '\0';  /* Terminate string with null */
+                msg[result] = '\0';  /* Terminate string if null */
                 printf("%s", msg +1);
                 
                 if (msg[0] == 'X') {                   
@@ -125,12 +125,11 @@ int main(int argc, char *argv[]) {
              }
              else if(fd == 0){ /*process input activity*/
                 
-                //fgets(input_cmd, MSG_SIZE+1, stdin);
                 fgets(input_cmd,255,stdin);
                  
                 if (strcmp(input_cmd, "quit\n")==0) {
                     printf("terminating session\n");
-                    close(sockfd);  //close the current client
+                    close(sockfd);  //close the current socket
                     exit(0);        //end program
                 }
                 else {
