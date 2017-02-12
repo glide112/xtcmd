@@ -40,7 +40,7 @@ send "quit\r"
 ### Using a script to read commands from a file (Windows):
 
 You can write a vbscript to read from a file but reccomend using expect from crygwin console.<br>
-*xtcmd-Win.zip: compiled on x64 Winodows uding gcc 5.0.3
+*xtcmd-Win.zip: compiled on x64 Winodows using gcc 5.0.3
 
 ============================================================
 ### Usage
