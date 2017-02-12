@@ -1,7 +1,7 @@
 # xtcmd
 Command line tool for Avaya Scopia XT
 ============================================================
-### To do:
+### To start:
 
 First you need to compile "xtcmd" which is a command line tool to connect between XT. "xtcmd" can run standalone. If you want to use a list of commands save in a file to feed xtcmd, you will need either a shell script or a batch file but even though you are on Windows, I would recommend using cygwin and run expect.
 Below are the samples.
