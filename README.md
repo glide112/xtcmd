@@ -30,7 +30,7 @@ while {[gets $fp line] >= 0} {
 
   expect ""
 
-  interact timeout 1 return     <----"if you need to have larger delay(sec) between the commands"
+  interact timeout 1 return     <----"if you need to have larger delay(sec) between the commands"<br>
 }
 
 send "quit\r"
