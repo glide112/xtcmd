@@ -18,22 +18,24 @@ cmd.sh : for Linux and Mac
 
 cmd.sh
 <br>ーーーーーーーーーーーーーーーーーーーーーーーー<br>
-＃!/usr/bin/expect
 
-set fp [open ./test.txt]        <----"./test.txt is a list of commands"
+　　　　#!/usr/bin/expect
 
-spawn ./xtcmd 192.168.99.17     <----"ex 192.168.99.17 is the ip address of XT"
+       set fp [open ./test.txt]        <----"./test.txt is a list of commands"
 
-while {[gets $fp line] >= 0} {
+       spawn ./xtcmd 192.168.99.17     <----"ex 192.168.99.17 is the ip address of XT"
 
-  send "$line\r"
+       while {[gets $fp line] >= 0} {
 
-  expect ""
+         send "$line\r"
 
-  interact timeout 1 return     <----"if you need to have larger delay(sec) between the commands"<br>
-}
+         expect ""
 
-send "quit\r"
+         interact timeout 1 return     <----"if you need to have larger delay(sec) between the commands"<br>
+       }
+
+       send "quit\r"
+
 <br>ーーーーーーーーーーーーーーーーーーーーーーーー<br>
 
 ============================================================
