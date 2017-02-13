@@ -7,7 +7,7 @@ First you need to compile "xtcmd" which is a command line tool to connect betwee
 Below are the samples.
 
 ============================================================
-### To compile command
+### To compile:
 Below is an example of how to compile. For Linux, Mac and Windows, compile can be done using gcc.
 
 $ gcc -o xtcmd xtcmd.c 
