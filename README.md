@@ -56,7 +56,8 @@ $ ./xtcmd.exe ADDRESS -d<br>
 *xtcmd-Win.zip: compiled on x64 Winodows using gcc 5.0.3<br>
 
 file reading usage (Windows):<br>
-*refer above
+*refer above<br>
+
 ============================================================
 
 written by Yosuke Sawamura
