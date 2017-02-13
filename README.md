@@ -42,7 +42,7 @@ You can write a vbscript to read from a file but reccomend using expect from cry
 *xtcmd-Win.zip: compiled on x64 Winodows using gcc 5.0.3
 
 ============================================================
-### Usage
+### Usage:
 Please go through the API document provided by Avaya to understand how AT commands communicate.
 
 standalone usage (Linux and Mac):<br>
