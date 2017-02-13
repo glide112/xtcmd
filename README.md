@@ -52,7 +52,7 @@ $ chmod 755 cmd.sh<br>
 $ ./cmd.sh<br>
 
 standalone usage (Windows):<br>
-$ ./xtcmd.exe ADDRESS -d<br>
+＞ ./xtcmd.exe ADDRESS -d<br>
 *xtcmd-Win.zip: compiled on x64 Winodows using gcc 5.0.3<br>
 
 file reading usage (Windows):<br>
