@@ -16,11 +16,9 @@ $ gcc -o xtcmd xtcmd.c
 ### Using a script to read commands from a file (Linux and Mac):
 cmd.sh : for Linux and Mac
 
-cmd.sh
-<br>ーーーーーーーーーーーーーーーーーーーーーーーー<br>
-
-　　　　#!/usr/bin/expect
-
+-----
+     #!/usr/bin/expect
+    
        set fp [open ./test.txt]        <----"./test.txt is a list of commands"
 
        spawn ./xtcmd 192.168.99.17     <----"ex 192.168.99.17 is the ip address of XT"
@@ -35,8 +33,7 @@ cmd.sh
        }
 
        send "quit\r"
-
-<br>ーーーーーーーーーーーーーーーーーーーーーーーー<br>
+-----
 
 ============================================================
 ### Using a script to read commands from a file (Windows):
