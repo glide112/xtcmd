@@ -29,7 +29,7 @@ cmd.sh : for Linux and Mac
 
          expect ""
 
-         interact timeout 1 return     <----"if you need to have larger delay(sec) between the commands"<br>
+         interact timeout 1 return     <----"if you need to have larger delay(sec) between the commands"
        }
 
        send "quit\r"
@@ -39,7 +39,6 @@ cmd.sh : for Linux and Mac
 ### Using a script to read commands from a file (Windows):
 
 You can write a vbscript to read from a file but reccomend using expect from crygwin console.<br>
-*xtcmd-Win.zip: compiled on x64 Winodows using gcc 5.0.3
 
 ============================================================
 ### Usage:
@@ -52,6 +51,12 @@ file reading usage (Linux and Mac):<br>
 $ chmod 755 cmd.sh<br>
 $ ./cmd.sh<br>
 
+standalone usage (Windows):<br>
+$ ./xtcmd.exe ADDRESS -d<br>
+*xtcmd-Win.zip: compiled on x64 Winodows using gcc 5.0.3<br>
+
+file reading usage (Windows):<br>
+*refer above
 ============================================================
 
 written by Yosuke Sawamura
