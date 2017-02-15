@@ -114,14 +114,23 @@ int main(int argc, char *argv[]) {
              if(fd==sockfd){   /* Accept data from open socket */
                 
                 //read data from open socket
-                result = read(sockfd, msg, MSG_SIZE);
-                msg[result] = '\0';  /* Terminate string if null */
-                printf("%s", msg +1);
+                result = read(sockfd,msg,MSG_SIZE);
+
+                int n = sizeof(msg)-6;
+                printf("%.*s\n", n, msg + sizeof(msg)-n);
                 
-                if (msg[0] == 'X') {                   
-                    close(sockfd);
-                    exit(0);
-                }                             
+                 if(debug==1){
+                     int i;
+                     size_t mem_length = sizeof(msg);
+                     unsigned char *p = (unsigned char *)msg;
+                     for (i=0; i<mem_length; i++) {
+                         printf("0x%02x ", p[i]);
+                         if (i%16==0)
+                             printf("\n");
+                     }
+                     printf("\n");
+                 }
+                 
              }
              else if(fd == 0){ /*process input activity*/
                 
