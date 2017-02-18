@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
      port=XTPORT;
      strcpy(hostname,argv[1]);
        
-     printf("\n*** session starting (enter \"quit\" to stop): \n");
+     printf("*** session starting (enter \"quit\" to stop): \n");
      fflush(stdout);
      
      /* Create a socket for the client */
@@ -175,7 +175,7 @@ int main(int argc, char *argv[]) {
        }      
      }
    } else {
-       printf("Invalid parameters.\nUsage: xtcmd HOSTNAME [-d (debug mode)]\n");
+       printf("Usage: xtcmd HOSTNAME [-d (debug mode)]\n");
        exit(0);
    } // end client code
    
